@@ -1,34 +1,34 @@
 programa
 {
 /***************
-*Programa : Idade em dias 
+*Programa : Expressao
 *Autor: Fernando Marques
 *Data: 23/07/2021
-*****************/	
-	
+*****************/
 	funcao inicio()
 	{
-		//Variaveis
-		inteiro idade, anos, meses,dias
-
+		//Entrada
+		inteiro A, B, C, D, R, S
+		
 		//Entrada
 		escreva("\n*****************************************")
-		escreva("\nPrograma de conversão de idade para dias")
+		escreva("\n          Calculo da espressão")
+		escreva("\n D = R+S/2, R = (A + B)^2, S = (B + C)^2")
 		escreva("\n*****************************************")
-		escreva("\nDigite sua idade em anos: ")
-		leia(anos)
-		escreva("\nDigite os meses :")
-		leia(meses)
-		escreva("\nDigite os dias :")
-		leia(dias)
-
+		escreva("\nDigite um numero inteiro para A : ")
+		leia(A)
+		escreva("\nDigite um numero inteiro para B :")
+		leia(B)
+		escreva("\nDigite um numero inteiro para C :")
+		leia(C)
+		
 		//Processamento
-		idade = (anos * 365) + (meses * 30) + dias
-
+		R = (A + B) * 2
+		S = (B + C) * 2
+		D = (R + S) / 2
+						
 		//Saida
-		limpa()
-		escreva("Sua idade é " + idade + " Dias")
-		   
+		escreva("O resultado da espressão é " + D )
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -36,7 +36,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 313; 
+ * @POSICAO-CURSOR = 147; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

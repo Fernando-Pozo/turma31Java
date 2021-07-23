@@ -1,34 +1,38 @@
 programa
 {
 /***************
-*Programa : Idade em dias 
+*Programa : Distancia Entre dois pontos
 *Autor: Fernando Marques
 *Data: 23/07/2021
-*****************/	
-	
+*****************/
+	inclua biblioteca Matematica --> mat
+
 	funcao inicio()
 	{
+
 		//Variaveis
-		inteiro idade, anos, meses,dias
+		inteiro px1, py1, px2, py2, D, Draiz
 
 		//Entrada
 		escreva("\n*****************************************")
-		escreva("\nPrograma de conversão de idade para dias")
+		escreva("\n      Distancia Plano Cartesiano")
+		escreva("\n         P(X1, Y1) e P(X2, Y2)")
 		escreva("\n*****************************************")
-		escreva("\nDigite sua idade em anos: ")
-		leia(anos)
-		escreva("\nDigite os meses :")
-		leia(meses)
-		escreva("\nDigite os dias :")
-		leia(dias)
+		escreva("\nDigite um valor para P X1 :")
+		leia(px1)
+		escreva("\nDigite um valor para P Y1 :")
+		leia(py1)
+		escreva("\nDigite um valor para P X2 :")
+		leia(px2)
+		escreva("\nDigite um valor para P Y2 :")
+		leia(py2)
 
 		//Processamento
-		idade = (anos * 365) + (meses * 30) + dias
+		D = ((px2 - px1) * 2) + ((py2 - py1) *2)
+		Draiz = mat.raiz(D,2.0)
 
 		//Saida
-		limpa()
-		escreva("Sua idade é " + idade + " Dias")
-		   
+		escreva("A distancia entre os dois pontos é " + Draiz + ".")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -36,7 +40,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 313; 
+ * @POSICAO-CURSOR = 784; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

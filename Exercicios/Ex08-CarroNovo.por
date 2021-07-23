@@ -1,34 +1,30 @@
 programa
 {
 /***************
-*Programa : Idade em dias 
+*Programa : Custo carro novo
 *Autor: Fernando Marques
 *Data: 23/07/2021
-*****************/	
+*****************/
 	
 	funcao inicio()
 	{
-		//Variaveis
-		inteiro idade, anos, meses,dias
 
+		//Variaveis 
+		inteiro valor, carroConsumidor, carroImposto
 		//Entrada
 		escreva("\n*****************************************")
-		escreva("\nPrograma de conversão de idade para dias")
+		escreva("\n           Custo Carro Novo ")
 		escreva("\n*****************************************")
-		escreva("\nDigite sua idade em anos: ")
-		leia(anos)
-		escreva("\nDigite os meses :")
-		leia(meses)
-		escreva("\nDigite os dias :")
-		leia(dias)
+		escreva("\nQual o custo do carro :")
+		leia(valor)
+
 
 		//Processamento
-		idade = (anos * 365) + (meses * 30) + dias
+		carroImposto = (valor + (valor * 0.45)) 
+		carroConsumidor = carroImposto + (carroImposto * 0.28)
 
 		//Saida
-		limpa()
-		escreva("Sua idade é " + idade + " Dias")
-		   
+		escreva("O Valor final para o consumior sera de R$", carroConsumidor)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -36,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 313; 
+ * @POSICAO-CURSOR = 621; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

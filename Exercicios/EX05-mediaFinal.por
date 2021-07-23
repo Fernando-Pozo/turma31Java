@@ -1,34 +1,33 @@
 programa
 {
 /***************
-*Programa : Idade em dias 
+*Programa : Media Final
 *Autor: Fernando Marques
 *Data: 23/07/2021
-*****************/	
+*****************/
 	
 	funcao inicio()
 	{
-		//Variaveis
-		inteiro idade, anos, meses,dias
-
+		//Entrada
+		real nota1, nota2, nota3, mediaFinal
+		
 		//Entrada
 		escreva("\n*****************************************")
-		escreva("\nPrograma de conversão de idade para dias")
+		escreva("\n              Media Final")
 		escreva("\n*****************************************")
-		escreva("\nDigite sua idade em anos: ")
-		leia(anos)
-		escreva("\nDigite os meses :")
-		leia(meses)
-		escreva("\nDigite os dias :")
-		leia(dias)
+		escreva("\nDigite um numero da primeira nota : ")
+		leia(nota1)
+		escreva("\nDigite um numero da segunda nota :")
+		leia(nota2)
+		escreva("\nDigite um numero da terceira nota :")
+		leia(nota3)
 
 		//Processamento
-		idade = (anos * 365) + (meses * 30) + dias
+		mediaFinal = ((nota1 * 2) + (nota2 * 3) + (nota3 * 5)) / 10
 
-		//Saida
-		limpa()
-		escreva("Sua idade é " + idade + " Dias")
-		   
+		//saida
+		escreva("A media final do aluno é " + mediaFinal)
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -36,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 313; 
+ * @POSICAO-CURSOR = 700; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

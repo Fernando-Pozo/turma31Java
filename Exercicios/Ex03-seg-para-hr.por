@@ -1,34 +1,34 @@
 programa
 {
 /***************
-*Programa : Idade em dias 
+*Programa : Evento Fabrica
 *Autor: Fernando Marques
 *Data: 23/07/2021
-*****************/	
-	
+*****************/
 	funcao inicio()
 	{
-		//Variaveis
-		inteiro idade, anos, meses,dias
 
+		//variaveis
+		inteiro segundos, horas, minutos, segundoshora
+		
 		//Entrada
 		escreva("\n*****************************************")
-		escreva("\nPrograma de conversão de idade para dias")
+		escreva("\nPrograma de conversão de Segundos para horas")
 		escreva("\n*****************************************")
-		escreva("\nDigite sua idade em anos: ")
-		leia(anos)
-		escreva("\nDigite os meses :")
-		leia(meses)
-		escreva("\nDigite os dias :")
-		leia(dias)
+		escreva("\nDigite o tempo e segundos : ")
+		leia(segundos)
 
-		//Processamento
-		idade = (anos * 365) + (meses * 30) + dias
 
-		//Saida
+		//processamento
+		horas = segundos / 3600
+		minutos = (segundos - (horas * 3600)) / 60
+		segundoshora = segundos - (horas * 3600) - (minutos * 60)
+
+
+		//saida
 		limpa()
-		escreva("Sua idade é " + idade + " Dias")
-		   
+		escreva("O evento de " + segundos + (" Segundos"))
+		escreva("\n sera " + horas + " Horas " + minutos + (" Minutos ") + segundoshora + (" Segundos") )
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -36,7 +36,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 313; 
+ * @POSICAO-CURSOR = 457; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
