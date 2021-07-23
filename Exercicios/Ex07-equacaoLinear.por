@@ -8,11 +8,11 @@ programa
 	funcao inicio()
 	{
 		//Variaveis	
-		inteiro A, B, C, D, E, F, X, Y
+		real A, B, C, D, E, F, X, Y
 		//Entrada
 		escreva("\n*****************************************")
 		escreva("\n         Equações Lineares ")
-		escreva("\n*****************************************")
+		escreva("\n*****************8************************")
 		escreva("\nDigite um valor para A :")
 		leia(A)
 		escreva("\nDigite um valor para B :")
@@ -31,7 +31,7 @@ programa
 		Y = ((A*F) - (C*D)) / ((A*E) - (B*D))
 
 		//Saida
-		escreva("O resultado da equação e X = " + X + " Y = " + Y)
+		escreva("\nO resultado da equação e X = " + X + " Y = " + Y)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -39,7 +39,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 780; 
+ * @POSICAO-CURSOR = 342; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
