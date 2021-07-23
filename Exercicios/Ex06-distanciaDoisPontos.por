@@ -11,8 +11,9 @@ programa
 	{
 
 		//Variaveis
-		inteiro px1, py1, px2, py2, D, Draiz
+		real px1, py1, px2, py2, D, Draiz
 
+	
 		//Entrada
 		escreva("\n*****************************************")
 		escreva("\n      Distancia Plano Cartesiano")
@@ -32,7 +33,7 @@ programa
 		Draiz = mat.raiz(D,2.0)
 
 		//Saida
-		escreva("A distancia entre os dois pontos é " + Draiz + ".")
+		escreva("A distancia entre os dois pontos é " + mat.arredondar(Draiz, 2))
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -40,7 +41,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 784; 
+ * @POSICAO-CURSOR = 866; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
