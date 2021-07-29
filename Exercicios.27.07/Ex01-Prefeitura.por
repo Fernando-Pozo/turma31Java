@@ -7,7 +7,7 @@ programa
 *Data: 27/07/2021
 *****************/	
 	
-	funcao inicio(){
+	funcao inicio(){
 
 		//variaveis
 		inteiro i, filhos, Mfilhos = 0
@@ -33,8 +33,8 @@ programa
 			se(salario > maior){
 				maior = salario
 			}
-			
-			se(salario < 100){
+			//salario menor que 100
+			se(salario <= 100){
 				menor = menor + 1
 			}
 				
@@ -46,14 +46,15 @@ programa
 		//media 
 		Msalario = Msalario / 20
 		Mfilhos = Mfilhos / 20
-		cem = (menor/2) * 10
-		
+		cem = (menor * 100) / 20
+		//menor * 100 / 20
 		
 		
 		//saida 
 		limpa()
 		escreva("\nA media do salário da população é : " + Msalario)
 		escreva("\nA media de filhos da população é : " + Mfilhos)
+		escreva("\nO maior salario da população é : " + maior)
 		escreva("\nA porcentagem de pessoas que recebem menos de R$ 100  é : " + cem + "%")
 		
 	}
@@ -63,7 +64,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 874; 
+ * @POSICAO-CURSOR = 1125; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
